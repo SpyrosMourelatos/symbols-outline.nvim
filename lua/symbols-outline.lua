@@ -205,7 +205,7 @@ function M._highlight_current_item(winnr)
   if leaf_node then
     for index, node in ipairs(M.state.flattened_outline_items) do
       if node == leaf_node then
-        vim.api.nvim_win_set_cursor(M.view.winnr, { index, 1 })
+        --removed for lastastatu=3vim.api.nvim_win_set_cursor(M.view.winnr, { index, 1 })
         break
       end
     end
