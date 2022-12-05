@@ -35,8 +35,8 @@ function View:setup_view()
   --  color, apart from globally overriding hl-NonText, which will potentially
   --  mess with other theme/user settings. So just use empty spaces for now.
   vim.api.nvim_win_set_option(self.winnr, 'showbreak', '      ') -- only has effect when wrap=true.
-  -- buffer stuff
-  vim.api.nvim_buf_set_name(self.bufnr, 'OUTLINE')
+  -- buffer stuff --removed line 39 for my custom statusline
+  -- vim.api.nvim_buf_set_name(self.bufnr, 'OUTLINE')
   vim.api.nvim_buf_set_option(self.bufnr, 'filetype', 'Outline')
   vim.api.nvim_buf_set_option(self.bufnr, 'modifiable', false)
 
